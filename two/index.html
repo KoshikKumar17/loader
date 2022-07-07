@@ -31,6 +31,7 @@
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
+  background: red;
   animation-delay: -0.036s;
 }
 .lds-roller div:nth-child(1):after {
@@ -100,10 +101,5 @@
 <body>
 <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
-<script>
-$(window).bind("load", function () {
-    jQuery(".lds-roller").delay(30000000).fadeOut();
-});
-</script>
 </body>
 </html>
