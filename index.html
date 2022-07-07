@@ -38,10 +38,10 @@ border-radius: 0.25em;
 transform: translate(-50%, -50%);
 }
 #loader:before {
-animation: before 2s infinite;
+animation: before 3s infinite;
 }
 #loader:after {
-animation: after 2s infinite;
+animation: after 3s infinite;
 }
 @keyframes before {
 0% {
@@ -88,7 +88,7 @@ box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0
 <script type='text/javascript'>
  /*<![CDATA[*/
 $(window).bind("load", function () {
-    jQuery("#loader").fadeOut("slow");
+    jQuery("#loader").delay(3000).fadeOut("slow");
     jQuery("#preloader").delay(3000).fadeOut();
 });
   /*]]>*/
