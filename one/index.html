@@ -28,35 +28,59 @@
     color: #838383;
     text-transform: uppercase;
     letter-spacing: 8px;
-    font-size: 15px;
+    font-size: 40px;
 }
 
 .preloader .dots-container {
     display: flex;
-    margin-bottom: 48px;
+    margin-bottom: 400px;
 }
 
 .preloader .dot {
     background: red;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin: 0 5px;
 }
 
 .preloader .dot.red {
-    background: #ef476f;
-    animation: bounce 1000ms infinite;
+    background: red;
+    animation: bounce 000ms infinite;
 }
 
-.preloader .dot.green {
-    background: #06d6a0;
+.preloader .dot.orange {
+    background: orange;
     animation: bounce 1000ms infinite;
     animation-delay: 200ms;
 }
 
 .preloader .dot.yellow {
-    background: #ffd166;
+    background: yellow;
+    animation: bounce 1000ms infinite;
+    animation-delay: 400ms;
+}
+
+.preloader .dot.green {
+    background: green;
+    animation: bounce 1000ms infinite;
+    animation-delay: 600ms;
+}
+
+.preloader .dot.blue {
+    background: blue;
+    animation: bounce 1000ms infinite;
+    animation-delay: 800ms;
+}
+
+.preloader .dot.indigo {
+    background: indigo;
+    animation: bounce 1000ms infinite;
+    animation-delay: 400ms;
+}
+
+.preloader .dot.violet {
+    background: violet;
     animation: bounce 1000ms infinite;
     animation-delay: 400ms;
 }
@@ -77,12 +101,16 @@
 
         <div class="dots-container">
             <div class="dot red"></div>
-            <div class="dot green"></div>
+            <div class="dot orange"></div>
             <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <div class="dot blue"></div>
+            <div class="dot indigo"></div>
+            <div class="dot violet"></div>
         </div>
 
         <div class="preloader-text">
-            Loading...
+            Please Wait...
         </div>
     </div>
 
