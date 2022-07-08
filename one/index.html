@@ -120,9 +120,11 @@
 <script>
 // typing text animation script
 var typed = new Typed(".loading", {
-    strings: ["Please Wait....", "The Page is Loading...."],
+    strings: ["Please Wait....", "The Page is being loaded...."],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 100,
+    backDelay: 400,
+    fadeOut: true,
     loop: true
 });
 </script>
