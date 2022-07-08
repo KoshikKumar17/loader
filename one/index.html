@@ -26,7 +26,7 @@
 }
 
 .preloader .preloader-text {
-    color: #3ff343;
+    color: black;
     letter-spacing: 4px;
     font-size: 40px;
     font-family: 'Sansita Swashed', cursive;
@@ -112,10 +112,19 @@
         </div>
 
         <div class="preloader-text">
-             • Please Wait....
+             <span class="loading"></span>
         </div>
     </div>
 
+<script>
+// typing text animation script
+var typed = new Typed(".typing", {
+    strings: ["Please Wait....", "The Page is Loading...."],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+</script>
 <script>
 $(window).bind("load", function () {
     jQuery(".preloader").delay(30000000).fadeOut();
