@@ -32,11 +32,12 @@
     font-size: 40px;
     font-family: 'Sansita Swashed', cursive;
     font-weight: bold;
+    margin-top: 100px;
 }
 
 .preloader .dots-container {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .preloader .dot {
@@ -122,7 +123,16 @@
         </div>
 </div>
 <div class="h1"> Hi hello </div>
-
+<script>
+// typing text animation script
+var typed = new Typed(".loading", {
+    strings: ["Please Wait....", "The Page is being loaded...."],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 400,
+    loop: true
+});
+</script>
 <script>
 "use strict";
 $(document).ready(function() {
