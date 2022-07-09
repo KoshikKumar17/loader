@@ -127,7 +127,7 @@
 // typing text animation script
 var typed = new Typed(".loading", {
     strings: ["Please Wait...."],
-    typeSpeed: 50,
+    typeSpeed: 150,
     backSpeed: 0,
     loop: true
 });
@@ -137,7 +137,7 @@ var typed = new Typed(".loading", {
 $(document).ready(function() {
     $('.preloader').animate({
         'opacity': '0',
-    }, 1550);
+    }, 4600);
     setTimeout(function() {
         $('.preloader').remove();
     }, 1550);
