@@ -119,8 +119,7 @@
         </div>
 
         <div class="preloader-text">
-             -----------------
-<br/><br/> <span class="loading"></span>
+            <span class="loading"></span>
         </div>
 </div>
 <div class="h1"> Hi hello </div>
@@ -139,10 +138,10 @@ var typed = new Typed(".loading", {
 $(document).ready(function() {
     $('.preloader').animate({
         'opacity': '0',
-    }, 1200);
+    }, 2000);
     setTimeout(function() {
         $('.preloader').remove();
-    }, 10000);
+    }, 1000);
 });
 </script>
 </body>
