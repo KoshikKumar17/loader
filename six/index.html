@@ -126,10 +126,9 @@
 <script>
 // typing text animation script
 var typed = new Typed(".loading", {
-    strings: ["Please Wait....", "The Page is being loaded...."],
+    strings: ["Please Wait...."],
     typeSpeed: 50,
-    backSpeed: 50,
-    backDelay: 200,
+    backSpeed: 0,
     loop: true
 });
 </script>
@@ -138,10 +137,10 @@ var typed = new Typed(".loading", {
 $(document).ready(function() {
     $('.preloader').animate({
         'opacity': '0',
-    }, 1500);
+    }, 1550);
     setTimeout(function() {
         $('.preloader').remove();
-    }, 1500);
+    }, 1550);
 });
 </script>
 </body>
